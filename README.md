@@ -75,6 +75,9 @@ del resultado académico.
 |---|---|---|---|---|
 | Predict Students' Dropout and Academic Success | CSV separado por punto y coma | [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/697/predict+students+dropout+and+academic+success) | 4.424 filas y 37 columnas | Se utiliza una copia estática; el pipeline no consulta actualizaciones | 
 
+Licencia del dataset: Creative Commons Attribution 4.0 International
+(CC BY 4.0). La referencia de sus autores se incluye en la sección 13.
+
 El archivo original es conservado en data/raw/data.csv.
 Contiene 36 características y la variable objetivo Target.
 
@@ -103,6 +106,10 @@ el módulo sqlite3 incluido con Python.
 
 
 ## 4. Estructura del repositorio
+
+La siguiente estructura muestra el proyecto después de ejecutar el pipeline.
+La carpeta data/processed/ y el archivo data/estudiantes.db se generan
+automáticamente y no están incluidos en el repositorio.
 
 ```text
 ├── data/
@@ -362,8 +369,6 @@ Se generaron dos conjuntos de datos y se cargaron en SQLite:
 Ambos conservaron los 4.424 registros, sin valores nulos ni filas
 duplicadas exactas en la ejecución realizada.
 También se generó el archivo data/processed/resumen_calidad.csv.
-
-![Evidencia de ejecución del pipeline](docs/evidencia_ejecucion.png)
 
 ### Consulta sobre los datos cargados
 
