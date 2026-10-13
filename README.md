@@ -27,6 +27,7 @@ Curso: ETL - Maestría en Inteligencia Artificial y Ciencia de Datos, Universida
     - [Variables de entorno](#variables-de-entorno)
     - [Obtención de los datos](#obtención-de-los-datos)
   - [7. Ejecución](#7-ejecución)
+    - [Tiempo de ejecución](#tiempo-de-ejecución)
     - [Salida esperada](#salida-esperada)
   - [8. Detalle de las etapas ETL](#8-detalle-de-las-etapas-etl)
     - [8.1 Extract](#81-extract)
@@ -202,6 +203,15 @@ Si el entorno virtual ya está activado, puede ejecutar:
 ```powershell
 python pipeline.py
 ```
+### Tiempo de ejecución
+
+En la prueba realizada desde una copia nueva de la rama develop,
+con un entorno virtual recién creado, el pipeline se ejecutó
+completamente en aproximadamente 6,26 segundos.
+
+Este tiempo corresponde a una ejecución local, no incluye la instalación
+de dependencias y puede variar según el equipo.
+
 
 ### Salida esperada
 
